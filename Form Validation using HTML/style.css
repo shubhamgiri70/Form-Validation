@@ -1,0 +1,95 @@
+/* General Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  max-width: 90%;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.form-control {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form-control label {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.form-control input:focus {
+  border-color: #6dd5ed;
+  box-shadow: 0 0 8px rgba(109, 213, 237, 0.5);
+}
+
+.form-control small {
+  color: red;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+button {
+  padding: 0.8rem;
+  width: 100%;
+  border-radius: 5px;
+  background: #6dd5ed;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #2193b0;
+}
+
+button:focus {
+  outline: none;
+}
+
+.success {
+  border-color: #28a745;
+}
+
+.error {
+  border-color: red;
+  background-color: rgba(255, 0, 0, 0.1);
+}
